@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-video-downloader"
+version = "1.0.0"
+description = "Open Video Downloader - command-line video and media downloader"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+dependencies = [
+    "yt-dlp>=2025.1.15"
+]
+
+[project.scripts]
+ovd = "ovd.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ovd*"]
