@@ -7,7 +7,11 @@ from pathlib import Path
 
 import yt_dlp
 
-from . import __app_name__, __version__
+try:
+    from . import __app_name__, __version__
+except ImportError:
+    __app_name__ = "Open Video Downloader"
+    __version__ = "1.0.0"
 
 
 # ============================================================
