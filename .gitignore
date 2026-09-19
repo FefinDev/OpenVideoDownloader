@@ -1,17 +1,37 @@
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
 
+# Virtual environments
 .venv/
 venv/
 env/
 
+# Packaging
 build/
 dist/
 *.egg-info/
+*.spec
 
+# Inno Setup
+installer-output/
+
+# IDEs
 .vscode/
 .idea/
 
+# OVD
 .ovd/
 *.log
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
